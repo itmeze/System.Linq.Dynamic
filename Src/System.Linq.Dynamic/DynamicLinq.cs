@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Threading;
+using System.Data.Spatial;
 
 namespace System.Linq.Dynamic
 {
@@ -617,7 +618,8 @@ namespace System.Linq.Dynamic
             typeof(Guid),
             typeof(Math),
             typeof(Convert),
-			typeof(System.Data.Objects.EntityFunctions)
+			typeof(System.Data.Objects.EntityFunctions),
+			typeof(DbGeography)
         };
 
         static readonly Expression trueLiteral = Expression.Constant(true);
